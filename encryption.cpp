@@ -179,7 +179,7 @@ void encrypt_file (
         unsigned char nonce[8],
         unsigned long long counter,
         int rounds,
-        int max_size) {
+        unsigned long long max_size) {
 
     // open file
     FILE* file = fopen(filename, "r+b");
@@ -262,7 +262,7 @@ void decrypt_file (
         unsigned char nonce[8],
         unsigned long long counter,
         int rounds,
-        int max_size) {
+        unsigned long long max_size) {
 
     // open file
     FILE* file = fopen(filename, "r+b");

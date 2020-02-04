@@ -86,7 +86,7 @@ void encrypt_file(
         unsigned char nonce[8],
         unsigned long long counter,
         int rounds, // either 10, 12 or 14
-        int max_size = 0
+        unsigned long long max_size = 0
 );
 
 void decrypt_file(
@@ -95,7 +95,7 @@ void decrypt_file(
         unsigned char nonce[8],
         unsigned long long counter,
         int rounds, // either 10, 12 or 14
-        int max_size = 0
+        unsigned long long max_size = 0
 );
 
 int pad(unsigned char* bytes, unsigned int length);
